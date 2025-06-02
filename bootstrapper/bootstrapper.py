@@ -25,7 +25,7 @@ class Bootstrapper:
     def __init__(
         self,
         language: str,
-        branch: str = "3.12",
+        branch: str,
         logger: logging.Logger = logging.getLogger(),
     ) -> None:
         self.language = language
@@ -199,7 +199,7 @@ def main() -> None:
         help="IETF language tag (e.g. tr, pt-br)",
     )
     parser.add_argument(
-        "-b", "--branch", type=str, default="3.12", help="CPython branch (e.g. 3.12)"
+        "-b", "--branch", type=str, default="3.13", help="CPython branch (e.g. 3.13)"
     )
     args = parser.parse_args()
     logger = logging.getLogger()
