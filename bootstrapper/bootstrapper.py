@@ -25,7 +25,7 @@ class Bootstrapper:
     def __init__(
         self,
         language: str,
-        branch: str = "3.13",
+        branch: str,
         logger: logging.Logger = logging.getLogger(),
     ) -> None:
         self.language = language
