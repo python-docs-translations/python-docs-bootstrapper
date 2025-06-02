@@ -28,7 +28,7 @@ jobs:
 
       - name: Install tree (Windows)
         if: matrix.os == 'windows-latest'
-        run: Install-Module PSScriptTools -scope CurrentUser -force
+        run: Install-Module PSScriptTools -scope CurrentUser -force -AllowClobber
 
       - name: Install tree (Linux)
         if: matrix.os == 'ubuntu-latest'
