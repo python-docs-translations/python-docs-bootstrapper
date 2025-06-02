@@ -20,11 +20,11 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -b BRANCH, --branch BRANCH
-                        CPython branch (e.g. 3.12)
+                        CPython branch (e.g. 3.13)
 ```
 
 ## Example
 
 ```bash
-$ bootstrapper tr --branch 3.12
+$ bootstrapper tr --branch 3.13
 ```
